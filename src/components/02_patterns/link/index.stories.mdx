@@ -1,0 +1,73 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Link from "./index.js";
+import Paragraph from "../../01_arrangements/paragraph";
+
+<Meta title='Components/Patterns/Link' />
+
+# Link
+
+The Link component is a Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+<br />
+<br />
+
+### Inline
+
+export const Template1 = (args) => (
+	<Paragraph level='2'>
+		Lorem ipsum dolor sit amet, <Link {...args}>consectetur</Link>{" "}
+		adipiscing elit. Quisque a ultrices diam.
+	</Paragraph>
+);
+
+<Canvas>
+	<Story
+		name='Inline'
+		args={{
+			variant: "inline",
+		}}
+	>
+		{Template1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Standalone
+
+export const Template2 = (args) => <Link {...args}>Standalone link</Link>;
+
+<Canvas>
+	<Story
+		name='Standalone'
+		args={{
+			variant: "standalone",
+		}}
+	>
+		{Template2.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Inline' />
+
+<br />
+<br />

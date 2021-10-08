@@ -1,0 +1,62 @@
+import { Meta, Story, Canvas, Props } from '@storybook/addon-docs'
+
+import RadiobuttonInput from './index.js'
+
+<Meta title="Components/Patterns/Radiobutton Input" />
+
+# Link
+
+The RadiobuttonInput component is a Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+<br />
+<br />
+
+### Default
+
+export const Template1 = (args) => (
+  <RadiobuttonInput label="Lorem ipsum dolor" required />
+)
+
+<Canvas>
+  <Story name="Default">{Template1.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Invalid state
+
+export const Template4 = (args) => (
+  <RadiobuttonInput
+    label="Lorem ipsum dolor"
+    fieldMessage="This field is required"
+    required
+    invalid
+  />
+)
+
+<Canvas>
+  <Story name="Invalid">{Template4.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story="Default" />
+
+<br />
+<br />

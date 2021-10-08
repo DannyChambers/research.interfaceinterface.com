@@ -1,0 +1,109 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import List from "./index.js";
+
+<Meta
+	title='Components/Arrangements/List'
+	argTypes={{
+		level: {
+			options: ["1", "2", "3"],
+			defaultValue: "2",
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# List
+
+The List component is an Arrangement that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Default
+
+export const Template1 = (args) => (
+	<List {...args}>
+		<li>List item one</li>
+		<li>List item two</li>
+		<li>List item three</li>
+		<li>List item four</li>
+	</List>
+);
+
+<Canvas>
+	<Story name='Default'>{Template1.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Bullet list
+
+export const Template2 = (args) => (
+	<List {...args} type='ul'>
+		<li>List item one</li>
+		<li>List item two</li>
+		<li>List item three</li>
+		<li>List item four</li>
+	</List>
+);
+
+<Canvas>
+	<Story name='Bullet list'>{Template2.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Numbered list
+
+export const Template3 = (args) => (
+	<List {...args} type='ol'>
+		<li>List item one</li>
+		<li>List item two</li>
+		<li>List item three</li>
+		<li>List item four</li>
+	</List>
+);
+
+<Canvas>
+	<Story name='Numbered list'>{Template3.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### List with icons
+
+export const Template4 = (args) => (
+	<List {...args}>
+		<li graphic='magic-wand'>List item one</li>
+		<li graphic='paint-roller'>List item two</li>
+		<li graphic='pencil-ruler'>List item three</li>
+		<li graphic='umbrella'>List item four</li>
+	</List>
+);
+
+<Canvas>
+	<Story name='List with icons'>{Template4.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Default' />
+
+<br />
+<br />

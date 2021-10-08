@@ -1,0 +1,46 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import PrimaryNavigation from "./index.js";
+
+<Meta title='Components/Modules/Primary Navigation' />
+
+# Page Header
+
+The PageHeader component is an Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Logged in
+
+export const Template1 = (args) => <PrimaryNavigation {...args} />;
+
+<Canvas>
+	<Story
+		name='Logged out'
+		args={{
+			loggedIn: true,
+		}}
+	>
+		{Template1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Logged Out' />
+
+<br />
+<br />

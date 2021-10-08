@@ -1,0 +1,74 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Icon from "./index.js";
+import Button from "../../02_patterns/button/";
+
+<Meta
+	title='Components/Patterns/Icon'
+	argTypes={{
+		size: {
+			options: ["small", "medium", "large"],
+			defaultValue: "medium",
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# Icon
+
+The Icon component is an Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Default
+
+export const Template1 = (args) => <Icon {...args} />;
+
+<Canvas>
+	<Story
+		name='Default'
+		args={{
+			graphic: "magic-wand",
+			size: "large",
+		}}
+	>
+		{Template1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Available Icons
+
+export const Template2 = (args) => <Icon {...args} />;
+
+<Canvas>
+	<Story
+		name='Available Icons'
+		args={{
+			graphic: "all",
+			size: "large",
+		}}
+	>
+		{Template2.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Default' />
+
+<br />
+<br />

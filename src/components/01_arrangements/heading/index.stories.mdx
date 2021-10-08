@@ -1,0 +1,207 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Heading from "./index.js";
+import Paragraph from "../paragraph/index.js";
+
+<Meta
+	title='Components/Arrangements/Heading'
+	argTypes={{
+		alignment: {
+			options: ["left", "center", "right"],
+			defaultValue: "left",
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# Heading
+
+The Heading component is an Arrangement that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Heading 1
+
+export const Template1 = (args) => (
+	<Heading {...args}>This is heading level 1</Heading>
+);
+
+<Canvas>
+	<Story
+		name='Heading1'
+		args={{
+			level: "1",
+		}}
+	>
+		{Template1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Heading 2
+
+export const Template1_1 = (args) => (
+	<Heading {...args}>This is heading level 2</Heading>
+);
+
+<Canvas>
+	<Story
+		name='Heading2'
+		args={{
+			level: "2",
+		}}
+	>
+		{Template1_1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Heading 3
+
+export const Template1_2 = (args) => (
+	<Heading {...args}>This is heading level 3</Heading>
+);
+
+<Canvas>
+	<Story
+		name='Heading3'
+		args={{
+			level: "3",
+		}}
+	>
+		{Template1_2.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Heading 4
+
+export const Template1_3 = (args) => (
+	<Heading {...args}>This is heading level 4</Heading>
+);
+
+<Canvas>
+	<Story
+		name='Heading4'
+		args={{
+			level: "4",
+		}}
+	>
+		{Template1_3.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Heading 5
+
+export const Template1_4 = (args) => (
+	<Heading {...args}>This is heading level 5</Heading>
+);
+
+<Canvas>
+	<Story
+		name='Heading5'
+		args={{
+			level: "5",
+		}}
+	>
+		{Template1_4.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Pairings
+
+export const Template2 = (args) => (
+	<>
+		<Heading level='1' alignment='left'>
+			This is heading level 1
+		</Heading>
+		<Paragraph level='1' alignment='left'>
+			Heading 1 is paired with Paragraph level 1. dolor sit amet,
+			consectetur adipiscing elit. In in justo maximus, tincidunt purus
+			sed, tincidunt massa. Nunc fermentum tincidunt hendrerit. Etiam eget
+			est eget velit tincidunt vulputate. Mauris malesuada nulla nibh, vel
+			convallis diam pellentesque vitae. Cras aliquet fermentum ligula in
+			molestie. Aliquam laoreet felis pharetra, dapibus massa quis.
+		</Paragraph>
+		<Heading level='2' alignment='left'>
+			This is heading level 2
+		</Heading>
+		<Paragraph level='1' alignment='left'>
+			Heading 2 is paired with Paragraph level 2. dolor sit amet,
+			consectetur adipiscing elit. In in justo maximus, tincidunt purus
+			sed, tincidunt massa. Nunc fermentum tincidunt hendrerit. Etiam eget
+			est eget velit tincidunt vulputate. Mauris malesuada nulla nibh, vel
+			convallis diam pellentesque vitae. Cras aliquet fermentum ligula in
+			molestie. Aliquam laoreet felis pharetra, dapibus massa quis.
+		</Paragraph>
+		<Heading level='3' alignment='left'>
+			This is heading level 3
+		</Heading>
+		<Paragraph level='2' alignment='left'>
+			Heading 3 is paired with Paragraph level 2. dolor sit amet,
+			consectetur adipiscing elit. In in justo maximus, tincidunt purus
+			sed, tincidunt massa. Nunc fermentum tincidunt hendrerit. Etiam eget
+			est eget velit tincidunt vulputate. Mauris malesuada nulla nibh, vel
+			convallis diam pellentesque vitae. Cras aliquet fermentum ligula in
+			molestie. Aliquam laoreet felis pharetra, dapibus massa quis.
+		</Paragraph>
+		<Heading level='4' alignment='left'>
+			This is heading level 4
+		</Heading>
+		<Paragraph level='3' alignment='left'>
+			Heading 4 is paired with Paragraph level 3. dolor sit amet,
+			consectetur adipiscing elit. In in justo maximus, tincidunt purus
+			sed, tincidunt massa. Nunc fermentum tincidunt hendrerit. Etiam eget
+			est eget velit tincidunt vulputate. Mauris malesuada nulla nibh, vel
+			convallis diam pellentesque vitae. Cras aliquet fermentum ligula in
+			molestie. Aliquam laoreet felis pharetra, dapibus massa quis.
+		</Paragraph>
+		<Heading level='5' alignment='left'>
+			This is heading level 5
+		</Heading>
+		<Paragraph level='3' alignment='left'>
+			Heading 5 is paired with Paragraph level 3. dolor sit amet,
+			consectetur adipiscing elit. In in justo maximus, tincidunt purus
+			sed, tincidunt massa. Nunc fermentum tincidunt hendrerit. Etiam eget
+			est eget velit tincidunt vulputate. Mauris malesuada nulla nibh, vel
+			convallis diam pellentesque vitae. Cras aliquet fermentum ligula in
+			molestie. Aliquam laoreet felis pharetra, dapibus massa quis.
+		</Paragraph>
+	</>
+);
+
+<Canvas>
+	<Story name='Pairing'>{Template2.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Default' />
+
+<br />
+<br />

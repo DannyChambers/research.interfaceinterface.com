@@ -1,0 +1,113 @@
+import { Meta, Story, Canvas, Props } from '@storybook/addon-docs'
+
+import TextareaInput from './index.js'
+
+<Meta title="Components/Patterns/Textarea Input" />
+
+# Link
+
+The TextareaInput component is a Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+<br />
+<br />
+
+### Default
+
+export const Template1 = (args) => (
+  <TextareaInput label="Lorem ipsum dolor" required />
+)
+
+<Canvas>
+  <Story name="Default">{Template1.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Using a Placeholder
+
+export const Template2 = (args) => (
+  <TextareaInput label="Lorem ipsum dolor" usePlaceholder required />
+)
+
+<Canvas>
+  <Story name="Placeholder">{Template2.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### With character count
+
+export const Template3 = (args) => (
+  <TextareaInput
+    label="Lorem ipsum dolor"
+    usePlaceholder
+    required
+    characterLimit="400"
+  />
+)
+
+<Canvas>
+  <Story name="With character count">{Template3.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Valid state
+
+export const Template4 = (args) => (
+  <TextareaInput
+    label="Lorem ipsum dolor"
+    usePlaceholder
+    fieldMessage="This input is valid"
+    required
+    valid
+  />
+)
+
+<Canvas>
+  <Story name="Valid">{Template4.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Invalid state
+
+export const Template5 = (args) => (
+  <TextareaInput
+    label="Lorem ipsum dolor"
+    usePlaceholder
+    fieldMessage="This field is required"
+    required
+    invalid
+  />
+)
+
+<Canvas>
+  <Story name="Invalid">{Template5.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story="Default" />
+
+<br />
+<br />

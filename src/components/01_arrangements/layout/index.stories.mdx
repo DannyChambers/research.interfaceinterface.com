@@ -1,0 +1,174 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Layout from "./index.js";
+
+<Meta title='Components/Arrangements/Layout' />
+
+# Layout
+
+The Layout component is an Arrangement that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Examples
+
+### 100% Column
+
+export const Template1 = (args) => (
+	<Layout grid='100'>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+	</Layout>
+);
+
+<Canvas>
+	<Story name='100'>{Template1.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### 60% 40% Columns
+
+export const Template2 = (args) => (
+	<Layout grid='60_40'>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+	</Layout>
+);
+
+<Canvas>
+	<Story name='60_40'>{Template2.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### 40% 60% Columns
+
+export const Template3 = (args) => (
+	<Layout grid='40_60'>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+	</Layout>
+);
+
+<Canvas>
+	<Story name='40_60'>{Template3.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### 33% Columns
+
+export const Template4 = (args) => (
+	<Layout grid='33_33_33'>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+	</Layout>
+);
+
+<Canvas>
+	<Story name='33_33_33'>{Template4.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### 25% Columns
+
+export const Template5 = (args) => (
+	<Layout grid='25_25_25_25'>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+		<div
+			className='column'
+			style={{ height: "400px", background: "#eee" }}
+		></div>
+	</Layout>
+);
+
+<Canvas>
+	<Story name='25_25_25_25'>{Template5.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Default' />
+
+<br />
+<br />

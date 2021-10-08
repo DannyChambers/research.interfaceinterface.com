@@ -1,0 +1,48 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Logo from "./index.js";
+
+<Meta
+	title='Components/Patterns/Logo'
+	argTypes={{
+		size: {
+			options: ["small", "medium", "large"],
+			defaultValue: "medium",
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# Logo
+
+The Logo component is an Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Primary Button
+
+export const Template1 = (args) => <Logo {...args} />;
+
+<Canvas>
+	<Story name='Default'>{Template1.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Default' />
+
+<br />
+<br />

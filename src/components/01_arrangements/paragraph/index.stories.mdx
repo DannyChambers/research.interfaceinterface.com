@@ -1,0 +1,171 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Paragraph from "./index.js";
+
+<Meta
+	title='Components/Arrangements/Paragraph'
+	argTypes={{
+		alignment: {
+			options: ["left", "center", "right"],
+			defaultValue: "left",
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# Paragraph
+
+The Paragraph component is an Arrangement that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+<br />
+<br />
+
+### Paragraph level 1
+
+export const Template1 = (args) => (
+	<>
+		<Paragraph {...args} level='1'>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac
+			turpis nec leo luctus viverra eu cursus lacus. Nunc interdum
+			consequat accumsan. Nulla justo lacus, rutrum vel ultricies quis,
+			ullamcorper eu sem. Sed vehicula ipsum consequat lectus tempor, et
+			pretium risus consequat. Nulla sed ullamcorper nulla, vel eleifend
+			eros. Vestibulum egestas nisi in enim sollicitudin, vel tincidunt
+			dolor maximus. Nunc placerat, enim eget auctor lacinia, mi est
+			sodales libero, non interdum dui ligula ac ligula. Nunc dignissim
+			ligula vel massa tempus tempus feugiat eget sem. Quisque elementum
+			eleifend elit. Vestibulum egestas, ex ac euismod suscipit, lorem
+			erat venenatis urna, a malesuada erat felis nec purus.
+		</Paragraph>
+		<Paragraph {...args} level='1'>
+			Donec non placerat est, vel mattis diam. Maecenas sit amet justo a
+			lorem tempor malesuada et sed velit. Sed eros orci, tempus id
+			vestibulum a, vehicula quis arcu. Mauris vel tincidunt metus, vitae
+			egestas elit. Mauris vitae tincidunt ante. Sed nec dui ipsum. Nam et
+			tortor vel turpis efficitur mollis nec nec lorem. Fusce id mauris ut
+			ante consectetur efficitur at sed enim. Vivamus blandit volutpat
+			nunc, a vestibulum metus maximus sed. Etiam gravida sem quis felis
+			egestas, ut mollis massa dictum. Phasellus vitae ullamcorper mauris.
+			Nunc iaculis, dui vel hendrerit congue, arcu est condimentum justo,
+			in finibus justo elit a massa. In fermentum facilisis viverra.
+			Aliquam auctor et massa in pharetra. Cras eget fermentum magna.
+			Vestibulum tincidunt at purus vitae gravida.
+		</Paragraph>
+	</>
+);
+
+<Canvas>
+	<Story name='Paragraph level 1'>{Template1.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Paragraph level 2
+
+export const Template2 = (args) => (
+	<>
+		<Paragraph {...args} level='2'>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac
+			turpis nec leo luctus viverra eu cursus lacus. Nunc interdum
+			consequat accumsan. Nulla justo lacus, rutrum vel ultricies quis,
+			ullamcorper eu sem. Sed vehicula ipsum consequat lectus tempor, et
+			pretium risus consequat. Nulla sed ullamcorper nulla, vel eleifend
+			eros. Vestibulum egestas nisi in enim sollicitudin, vel tincidunt
+			dolor maximus. Nunc placerat, enim eget auctor lacinia, mi est
+			sodales libero, non interdum dui ligula ac ligula. Nunc dignissim
+			ligula vel massa tempus tempus feugiat eget sem. Quisque elementum
+			eleifend elit. Vestibulum egestas, ex ac euismod suscipit, lorem
+			erat venenatis urna, a malesuada erat felis nec purus.
+		</Paragraph>
+		<Paragraph {...args} level='2'>
+			Donec non placerat est, vel mattis diam. Maecenas sit amet justo a
+			lorem tempor malesuada et sed velit. Sed eros orci, tempus id
+			vestibulum a, vehicula quis arcu. Mauris vel tincidunt metus, vitae
+			egestas elit. Mauris vitae tincidunt ante. Sed nec dui ipsum. Nam et
+			tortor vel turpis efficitur mollis nec nec lorem. Fusce id mauris ut
+			ante consectetur efficitur at sed enim. Vivamus blandit volutpat
+			nunc, a vestibulum metus maximus sed. Etiam gravida sem quis felis
+			egestas, ut mollis massa dictum. Phasellus vitae ullamcorper mauris.
+			Nunc iaculis, dui vel hendrerit congue, arcu est condimentum justo,
+			in finibus justo elit a massa. In fermentum facilisis viverra.
+			Aliquam auctor et massa in pharetra. Cras eget fermentum magna.
+			Vestibulum tincidunt at purus vitae gravida.
+		</Paragraph>
+	</>
+);
+
+<Canvas>
+	<Story name='Paragraph level 2'>{Template2.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Paragraph 3
+
+export const Template3 = (args) => (
+	<>
+		<Paragraph {...args} level='3'>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac
+			turpis nec leo luctus viverra eu cursus lacus. Nunc interdum
+			consequat accumsan. Nulla justo lacus, rutrum vel ultricies quis,
+			ullamcorper eu sem. Sed vehicula ipsum consequat lectus tempor, et
+			pretium risus consequat. Nulla sed ullamcorper nulla, vel eleifend
+			eros. Vestibulum egestas nisi in enim sollicitudin, vel tincidunt
+			dolor maximus. Nunc placerat, enim eget auctor lacinia, mi est
+			sodales libero, non interdum dui ligula ac ligula. Nunc dignissim
+			ligula vel massa tempus tempus feugiat eget sem. Quisque elementum
+			eleifend elit. Vestibulum egestas, ex ac euismod suscipit, lorem
+			erat venenatis urna, a malesuada erat felis nec purus.
+		</Paragraph>
+		<Paragraph {...args} level='3'>
+			Donec non placerat est, vel mattis diam. Maecenas sit amet justo a
+			lorem tempor malesuada et sed velit. Sed eros orci, tempus id
+			vestibulum a, vehicula quis arcu. Mauris vel tincidunt metus, vitae
+			egestas elit. Mauris vitae tincidunt ante. Sed nec dui ipsum. Nam et
+			tortor vel turpis efficitur mollis nec nec lorem. Fusce id mauris ut
+			ante consectetur efficitur at sed enim. Vivamus blandit volutpat
+			nunc, a vestibulum metus maximus sed. Etiam gravida sem quis felis
+			egestas, ut mollis massa dictum. Phasellus vitae ullamcorper mauris.
+			Nunc iaculis, dui vel hendrerit congue, arcu est condimentum justo,
+			in finibus justo elit a massa. In fermentum facilisis viverra.
+			Aliquam auctor et massa in pharetra. Cras eget fermentum magna.
+			Vestibulum tincidunt at purus vitae gravida.
+		</Paragraph>
+	</>
+);
+
+<Canvas>
+	<Story
+		name='Paragraph level 3'
+		args={{
+			level: "3",
+			text: "This is paragraph level 3",
+		}}
+	>
+		{Template3.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Paragraph level 1' />
+
+<br />
+<br />

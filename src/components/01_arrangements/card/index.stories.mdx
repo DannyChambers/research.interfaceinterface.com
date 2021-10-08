@@ -1,0 +1,70 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Color from "../../00_tokens/color/";
+
+import PageSection from "./index.js";
+
+<Meta
+	title='Components/Arrangements/Page Section'
+	argTypes={{
+		backgroundColor: {
+			options: [
+				Color.brandcolor6,
+				Color.brandcolor1,
+				Color.brandcolor2,
+				Color.brandcolor3,
+				Color.brandcolor4,
+				Color.brandcolor5,
+				Color.brandcolor7,
+				Color.brandcolor8,
+				Color.brandcolor9,
+			],
+			control: { type: "select" },
+		},
+		variant: {
+			options: ["default", "full-page"],
+			defaultValue: "default",
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# Page Section
+
+The Page Section component is an Arrangement that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+export const Template = (args) => <PageSection {...args} />;
+
+<Canvas>
+	<Story
+		name='Default'
+		args={{
+			heading: "This is the Section heading",
+			subheading: "This is the Section subheading",
+		}}
+	>
+		{Template.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Default' />
+
+<br />
+<br />

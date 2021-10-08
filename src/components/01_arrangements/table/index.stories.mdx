@@ -1,0 +1,85 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Table from "./index.js";
+
+<Meta title='Components/Arrangements/Table' />
+
+# Page Section
+
+The Table component is an Arrangement that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+export const Template = (args) => (
+	<Table
+		data={[
+			{
+				title: "Title 1",
+				description:
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus condimentum tempus, Ut dapibus sed nunc non semper.",
+				price: "12.99",
+			},
+			{
+				title: "Title 2",
+				description:
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus condimentum tempus, Ut dapibus sed nunc non semper.",
+				price: "12.99",
+			},
+			{
+				title: "Title 3",
+				description:
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus condimentum tempus, Ut dapibus sed nunc non semper.",
+				price: "12.99",
+			},
+			{
+				title: "Title 4",
+				description:
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus condimentum tempus, Ut dapibus sed nunc non semper.",
+				price: "12.99",
+			},
+			{
+				title: "Title 5",
+				description:
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus condimentum tempus, Ut dapibus sed nunc non semper.",
+				price: "12.99",
+			},
+			{
+				title: "Title 6",
+				description:
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus condimentum tempus, Ut dapibus sed nunc non semper.",
+				price: "12.99",
+			},
+			{
+				title: "Title 7",
+				description:
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus condimentum tempus, Ut dapibus sed nunc non semper.",
+				price: "12.99",
+			},
+		]}
+		{...args}
+	/>
+);
+
+<Canvas>
+	<Story name='Default'>{Template.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Default' />
+
+<br />
+<br />

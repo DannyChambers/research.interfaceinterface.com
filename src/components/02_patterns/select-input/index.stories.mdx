@@ -1,0 +1,135 @@
+import { Meta, Story, Canvas, Props } from '@storybook/addon-docs'
+
+import SelectInput from './index.js'
+
+<Meta title="Components/Patterns/Select Input" />
+
+# Select Input
+
+The SelectInput component is a Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+<br />
+<br />
+
+### Default
+
+export const Template1 = (args) => (
+  <SelectInput
+    label="Choose an option"
+    required
+    options={[
+      'Option one',
+      'Option two',
+      'Option three',
+      'Option four',
+      'Option five',
+      'Option six',
+      'Other',
+    ]}
+  />
+)
+
+<Canvas>
+  <Story name="Default">{Template1.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Using a Placeholder
+
+export const Template2 = (args) => (
+  <SelectInput
+    label="Choose an option"
+    usePlaceholder
+    required
+    options={[
+      'Option one',
+      'Option two',
+      'Option three',
+      'Option four',
+      'Option five',
+      'Option six',
+    ]}
+  />
+)
+
+<Canvas>
+  <Story name="Placeholder">{Template2.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Valid state
+
+export const Template3 = (args) => (
+  <SelectInput
+    label="Choose an option"
+    usePlaceholder
+    fieldMessage="This field is required"
+    required
+    valid
+    options={[
+      'Option one',
+      'Option two',
+      'Option three',
+      'Option four',
+      'Option five',
+      'Option six',
+    ]}
+  />
+)
+
+<Canvas>
+  <Story name="Valid">{Template3.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Invalid state
+
+export const Template4 = (args) => (
+  <SelectInput
+    label="Choose an option"
+    usePlaceholder
+    fieldMessage="This field is required"
+    required
+    invalid
+    options={[
+      'Option one',
+      'Option two',
+      'Option three',
+      'Option four',
+      'Option five',
+      'Option six',
+    ]}
+  />
+)
+
+<Canvas>
+  <Story name="Invalid">{Template4.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story="Default" />
+
+<br />
+<br />

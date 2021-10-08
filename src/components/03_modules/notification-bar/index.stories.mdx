@@ -1,0 +1,123 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import NotificationBar from "./index.js";
+
+import Link from "../../02_patterns/link/";
+
+<Meta title='Components/Modules/Notification Bar' />
+
+# Button
+
+The Notification bar component is an Module that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Information (Default)
+
+export const Template1 = (args) => (
+	<NotificationBar {...args}>This is a notification message.</NotificationBar>
+);
+
+<Canvas>
+	<Story
+		name='Information'
+		args={{
+			status: "information",
+		}}
+	>
+		{Template1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Success with Icon and link
+
+export const Template2 = (args) => (
+	<NotificationBar {...args}>
+		This is a success message with an icon and a{" "}
+		<Link href='http://www.yahoo.com' newwindow>
+			link
+		</Link>
+		.
+	</NotificationBar>
+);
+
+<Canvas>
+	<Story
+		name='Success with Icon'
+		args={{
+			status: "success",
+			icon: "checkmark-circle",
+		}}
+	>
+		{Template2.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Warning with Icon
+
+export const Template3 = (args) => (
+	<NotificationBar {...args}>
+		This is a warning message with an icon.
+	</NotificationBar>
+);
+
+<Canvas>
+	<Story
+		name='Warning with Icon'
+		args={{
+			status: "warning",
+			icon: "warning",
+		}}
+	>
+		{Template3.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Error with Icon
+
+export const Template4 = (args) => (
+	<NotificationBar {...args}>
+		This is an error message with an icon.
+	</NotificationBar>
+);
+
+<Canvas>
+	<Story
+		name='Error with Icon'
+		args={{
+			status: "error",
+			icon: "cross-circle",
+		}}
+	>
+		{Template4.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Information' />
+
+<br />
+<br />

@@ -1,0 +1,117 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Button from "./index.js";
+
+<Meta
+	title='Components/Patterns/Button'
+	argTypes={{
+		size: {
+			options: ["small", "medium", "large"],
+			defaultValue: "medium",
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# Button
+
+The Button component is an Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Primary Button
+
+export const Template1 = (args) => <Button {...args} />;
+
+<Canvas>
+	<Story
+		name='Primary'
+		args={{
+			variant: "primary",
+			text: "Primary button",
+		}}
+	>
+		{Template1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Primary Button with Icon
+
+export const Template1_1 = (args) => <Button {...args} />;
+
+<Canvas>
+	<Story
+		name='Primary with Icon'
+		args={{
+			variant: "primary",
+			text: "Primary button",
+			size: "medium",
+			icon: "star",
+		}}
+	>
+		{Template1_1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Secondary Button
+
+export const Template2 = (args) => <Button {...args} />;
+
+<Canvas>
+	<Story
+		name='Secondary'
+		args={{
+			variant: "secondary",
+			text: "Secondary button",
+		}}
+	>
+		{Template2.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+### Secondary Button with Icon
+
+export const Template2_1 = (args) => <Button {...args} />;
+
+<Canvas>
+	<Story
+		name='Secondary with Icon'
+		args={{
+			variant: "secondary",
+			text: "Secondary button",
+			size: "medium",
+			icon: "star",
+		}}
+	>
+		{Template2_1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Primary' />
+
+<br />
+<br />

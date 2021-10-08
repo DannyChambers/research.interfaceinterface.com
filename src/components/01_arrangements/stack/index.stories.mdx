@@ -1,0 +1,48 @@
+import { Meta, Story, Canvas, Props } from '@storybook/addon-docs'
+
+import Stack from './index.js'
+
+<Meta title="Components/Arrangements/Stack" />
+
+# Stack
+
+The Stack component is an Arrangement that adds space below it's contents..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Default
+
+export const Template1 = (args) => (
+  <Stack {...args}>This is heading level 1 in a stack component</Heading>
+)
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      variant: 'Default',
+    }}
+  >
+    {Template1.bind({})}
+  </Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story="Default" />
+
+<br />
+<br />

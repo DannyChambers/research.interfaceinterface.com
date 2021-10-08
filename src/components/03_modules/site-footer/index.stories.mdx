@@ -1,0 +1,65 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import SiteFooter from "./index.js";
+
+import List from "../../01_arrangements/list/";
+
+<Meta
+	title='Components/Modules/Site Footer'
+	argTypes={{
+		loggedIn: {
+			options: [true, false],
+			defaultValue: false,
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# Site footer
+
+The SiteFooter component is an Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Logged out
+
+export const Template1 = (args) => (
+	<SiteFooter {...args}>
+		<List level='3'>
+			<li>List item one</li>
+			<li>List item two</li>
+			<li>List item three</li>
+		</List>
+	</SiteFooter>
+);
+
+<Canvas>
+	<Story
+		name='Logged out'
+		args={{
+			loggedIn: false,
+		}}
+	>
+		{Template1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Logged Out' />
+
+<br />
+<br />

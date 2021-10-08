@@ -1,0 +1,61 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import ButtonGroup from "./index.js";
+import Button from "../../02_patterns/button/";
+
+<Meta
+	title='Components/Arrangements/Button Group'
+	argTypes={{
+		alignment: {
+			options: ["left", "right", "center"],
+			defaultValue: "default",
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# Button group
+
+The Button group component is an Arrangement that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Default
+
+export const Template1 = (args) => (
+	<ButtonGroup {...args}>
+		<Button text='Button one' />
+		<Button variant='secondary' text='Button two' />
+	</ButtonGroup>
+);
+
+<Canvas>
+	<Story
+		name='Default'
+		args={{
+			alignment: "left",
+		}}
+	>
+		{Template1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Default' />
+
+<br />
+<br />

@@ -1,0 +1,57 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import PageFooter from "./index.js";
+
+<Meta
+	title='Components/Modules/Page Footer'
+	argTypes={{
+		loggedIn: {
+			options: [true, false],
+			defaultValue: false,
+			control: { type: "select" },
+		},
+	}}
+/>
+
+# Page footer
+
+The PageFooter component is an Pattern that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Logged in
+
+export const Template1 = (args) => <PageFooter {...args} />;
+
+<Canvas>
+	<Story
+		name='Logged out'
+		args={{
+			loggedIn: false,
+		}}
+	>
+		{Template1.bind({})}
+	</Story>
+</Canvas>
+
+<br />
+<br />
+
+<br />
+
+## Properties
+
+<Props story='Logged Out' />
+
+<br />
+<br />

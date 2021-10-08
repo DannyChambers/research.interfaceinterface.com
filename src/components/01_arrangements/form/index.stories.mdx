@@ -1,0 +1,154 @@
+import { Meta, Story, Canvas, Props } from "@storybook/addon-docs";
+
+import Form, { Fieldset } from "./index.js";
+
+import Layout from "../../01_arrangements/layout/";
+import ButtonGroup from "../../01_arrangements/button-group/";
+import TextInput from "../../02_patterns/text-input/";
+import TextareaInput from "../../02_patterns/textarea-input/";
+import SelectInput from "../../02_patterns/select-input/";
+import CheckboxInput from "../../02_patterns/checkbox-input/";
+import RadiobuttonsInput from "../../02_patterns/radiobuttons-input/";
+import Button from "../../02_patterns/button/";
+
+<Meta title='Components/Arrangements/Form' />
+
+# Form
+
+The Form component is an Arrangement that..
+
+<br />
+<br />
+
+## Design guidance
+
+Lorem ipsum dolor sit etiet..
+
+<br />
+<br />
+
+## Example
+
+### Default
+
+export const Template1 = (args) => {
+	return (
+		<Layout>
+			<div className='column'>
+				<Form action='#' method='post' {...args}>
+					<Fieldset legend='Your details'>
+						<Layout grid='50_50'>
+							<div className='column'>
+								<TextInput
+									label='First name'
+									name='_123'
+									required
+									fieldMessage='This is some helpful information about the field'
+								/>
+							</div>
+							<div className='column'>
+								<TextInput
+									label='Last name'
+									name='_1234'
+									required
+								/>
+							</div>
+						</Layout>
+						<Layout>
+							<div className='column'>
+								<TextInput
+									label='Email address'
+									name='_12345'
+									required
+									validPattern='email'
+								/>
+							</div>
+							<div className='column'>
+								<TextInput
+									label='Phone number'
+									name='_123456'
+									required
+									validPattern='phone'
+								/>
+							</div>
+							<div className='column'>
+								<SelectInput
+									label='Gender'
+									name='_1234567'
+									options={["Male", "Female", "Other"]}
+								/>
+							</div>
+						</Layout>
+					</Fieldset>
+					<Fieldset legend='Your comments'>
+						<Layout>
+							<div className='column'>
+								<SelectInput
+									label='Department'
+									name='_12345678'
+									options={[
+										"Marketing",
+										"Sales",
+										"Customer services",
+										"Other",
+									]}
+									required
+								/>
+							</div>
+							<div className='column'>
+								<TextareaInput
+									label='Message'
+									name='_123456789'
+									characterLimit='450'
+								/>
+							</div>
+						</Layout>
+					</Fieldset>
+					<Fieldset legend='Communication preferences'>
+						<CheckboxInput
+							label='I can be contacted by phone'
+							name='_1234567890'
+							selected
+						/>
+						<CheckboxInput
+							label='I can be contacted by email'
+							name='_1234567890'
+						/>
+						<CheckboxInput
+							label='I can be contacted in writing'
+							name='_1234567890'
+						/>
+					</Fieldset>
+					<Fieldset legend='Marketing preferences'>
+						<Radiobuttons
+							label='No'
+							name='_1234567gggtt890'
+							options={[
+								{ value: "no", label: "No" },
+								{ value: "yes", label: "Yes" },
+							]}
+						/>
+					</Fieldset>
+					<ButtonGroup alignment='right'>
+						<Button variant='secondary' text='Reset' />
+						<Button variant='primary' text='Submit' />
+					</ButtonGroup>
+				</Form>
+			</div>
+		</Layout>
+	);
+};
+
+<Canvas>
+	<Story name='Default'>{Template1.bind({})}</Story>
+</Canvas>
+
+<br />
+<br />
+
+## Properties
+
+<Props story='Default' />
+
+<br />
+<br />
