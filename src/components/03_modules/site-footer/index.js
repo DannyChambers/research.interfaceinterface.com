@@ -12,7 +12,7 @@ const SiteFooter = (props) => {
 		>
 			{props.children}
 			<Paragraph level='3' alignment='center'>
-				&copy; Copyright 2021
+				Est. 2021
 			</Paragraph>
 		</El>
 	);

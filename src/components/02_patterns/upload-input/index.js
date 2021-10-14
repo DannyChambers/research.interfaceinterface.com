@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
 
-import { generateID } from "../../05_utilities";
+import { generateID } from "../../00_tokens/utility";
 
 import Paragraph from "../../01_arrangements/paragraph";
 import Icon from "../../02_patterns/icon";

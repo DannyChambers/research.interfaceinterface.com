@@ -5,6 +5,7 @@ import { CSSColor } from "./color/";
 import Typography from "./typography/";
 import Dimension from "./dimension/";
 import Effect from "./effect/";
+import Utility from "./utility/";
 
 export default createGlobalStyle`
     ${Reset}
@@ -12,4 +13,5 @@ export default createGlobalStyle`
     ${Typography}
     ${Dimension}
     ${Effect}
+    ${Utility}
 `;

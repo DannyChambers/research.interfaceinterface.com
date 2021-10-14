@@ -1,17 +1,13 @@
-import React, { useState } from "react";
-import styled, { css } from "styled-components";
-
-import { breakpoints } from "../../00_tokens/dimension";
+import React from "react";
+import styled from "styled-components";
 
 import Button from "../../../components/02_patterns/button/";
 
 const Modal = (props) => {
-	const [active, setActive] = useState(true);
-
 	return (
 		<>
 			{(() => {
-				if (active) {
+				if (props.active) {
 					return (
 						<El
 							{...props}
@@ -29,9 +25,6 @@ const Modal = (props) => {
 													icon='cross'
 													iconOnly
 													classes='button-close'
-													click={() => {
-														setActive(false);
-													}}
 												/>
 											);
 										}
