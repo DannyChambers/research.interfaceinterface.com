@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import GlobalStyle from "./components/00_tokens/global-style";
 
 import HomePage from "./components/04_pages/home-page/";
-import FormPage from "./components/04_pages/form-page/";
+import Example from "./experiments/example/";
+import Experiment from "./experiments/example/experiment/";
 
 function App() {
 	return (
@@ -16,8 +17,11 @@ function App() {
 					<Route exact path='/'>
 						<HomePage />
 					</Route>
-					<Route path='/form-page/'>
-						<FormPage />
+					<Route exact path='/example/'>
+						<Example />
+					</Route>
+					<Route exact path='/example/experiment/'>
+						<Experiment />
 					</Route>
 				</Switch>
 			</Router>

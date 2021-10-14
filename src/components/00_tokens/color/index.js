@@ -41,6 +41,7 @@ export const CSSColor = css`
 		--cta-primary--active: var(--brand-color-4);
 		--cta-secondary: var(--brand-color-5);
 		--cta-secondary--active: var(--brand-color-6);
+		--cta--disabled: var(--brand-color-6);
 		--status--information: var(--brand-color-10);
 		--status--success: var(--brand-color-11);
 		--status--warning: var(--brand-color-12);

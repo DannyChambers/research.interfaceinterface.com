@@ -26,7 +26,7 @@ export const Fieldset = (props) => {
 };
 
 const El = styled.form`
-	padding: var(--spacing-full);
+	padding: var(--spacing-full) 0;
 
 	fieldset {
 		border: 1px solid var(--border-color-1);

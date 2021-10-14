@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 import { breakpoints } from "../../00_tokens/dimension";
-import { lightOrDark } from "../../05_utilities";
+import { lightOrDark } from "../../00_tokens/utility";
 
 import Heading from "../../01_arrangements/heading";
 import Icon from "../../02_patterns/icon";

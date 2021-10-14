@@ -22,7 +22,9 @@ const Button = (props) => {
 			data-testid='123abc'
 			className={`button ${props.classes}`}
 			{...(tag === "a" ? { href: props.href } : {})}
-			{...(tag === "button" ? { "aria-pressed": pressed } : {})}
+			{...(tag === "button"
+				? { "aria-pressed": pressed, type: "button" }
+				: {})}
 			onClick={handleClick}
 		>
 			{(() => {
@@ -63,6 +65,13 @@ const El = styled.div`
 	&[aria-pressed="true"] {
 		background: var(--cta-primary--active);
 		border-color: var(--cta-primary--active);
+	}
+
+	&:disabled {
+		background: var(--cta--disabled);
+		border-color: var(--cta--disabled);
+		cursor: not-allowed;
+		pointer-events: none;
 	}
 
 	${(props) =>
