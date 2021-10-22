@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-
-import "./firebase-project";
 import { getAuth, sendSignInLinkToEmail } from "firebase/auth";
 
 import Layout from "../../components/01_arrangements/layout/";
@@ -22,10 +20,7 @@ const Example = (props) => {
 		//Sending the access link --
 
 		const actionCodeSettings = {
-			// URL you want to redirect back to.
-			// URL must be in the authorized domains list in the Firebase Console.
 			url: "http://localhost:3000/example/experiment/",
-			// This must be true.
 			handleCodeInApp: true,
 		};
 
@@ -60,9 +55,15 @@ const Example = (props) => {
 									<Heading level='2'>
 										Thank you for taking part!
 									</Heading>
-									<Paragraph level='2'>
+									<Paragraph level='1'>
 										Please provide your email address and we
 										will send you a unique access link.
+									</Paragraph>
+									<Paragraph level='1'>
+										Your details will not be used for any
+										other reason than to facillitate a
+										unique entry to this experiment and your
+										results will be anonymised.
 									</Paragraph>
 								</div>
 								<div className='column'>
@@ -77,7 +78,7 @@ const Example = (props) => {
 							<Layout>
 								<div className='column'>
 									<Heading level='2' alignment='center'>
-										Thanks again!
+										Thanks.
 									</Heading>
 									<Paragraph level='2' alignment='center'>
 										We have sent you a link to access the

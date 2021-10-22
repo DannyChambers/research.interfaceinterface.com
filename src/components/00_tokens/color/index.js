@@ -37,6 +37,7 @@ export const CSSColor = css`
 		--text-color-light: var(--brand-color-9);
 		--text-color-medium: var(--brand-color-6);
 		--border-color-1: var(--brand-color-6);
+		--background-color-1: var(--brand-color-7);
 		--cta-primary: var(--brand-color-3);
 		--cta-primary--active: var(--brand-color-4);
 		--cta-secondary: var(--brand-color-5);
